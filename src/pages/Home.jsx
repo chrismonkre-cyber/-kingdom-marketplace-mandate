@@ -19,7 +19,7 @@ export default function Home() {
     >
       <div className="max-w-4xl mx-auto px-4 pb-16 space-y-10">
         <GlassCard>
-          <p className="font-lora text-yellow-100/90 text-sm md:text-base leading-relaxed text-center">
+          <p className="font-lora text-white/90 text-sm md:text-base leading-relaxed text-center">
             Kingdom Marketplace Mandate helps believers bring the presence, wisdom, integrity, courage, and purpose of God into the marketplace. Your work is not separate from your calling. Your business, leadership, skills, creativity, and influence can become a platform for Kingdom impact.
           </p>
         </GlassCard>
@@ -34,8 +34,8 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {FEATURES.map(f => (
             <GlassCard key={f.title}>
-              <h3 className="font-cinzel text-lg font-bold text-yellow-300 mb-2">{f.title}</h3>
-              <p className="font-lora text-yellow-100/80 text-sm">{f.text}</p>
+              <h3 className="font-cinzel text-lg font-bold text-yellow-200 mb-2">{f.title}</h3>
+              <p className="font-lora text-white/85 text-sm">{f.text}</p>
             </GlassCard>
           ))}
         </div>
