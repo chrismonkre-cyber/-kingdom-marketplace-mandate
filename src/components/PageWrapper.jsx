@@ -3,18 +3,25 @@ import Footer from "./Footer";
 
 const LOGO = "https://media.base44.com/images/public/user_69a2073c194ba1099feee8ab/4ac06c230_newlogo.png";
 
-export default function PageWrapper({ desktopBg, mobileBg, title, subtitle, children }) {
+export default function PageWrapper({
+  desktopBg,
+  mobileBg,
+  title,
+  subtitle,
+  children,
+  overlayClass = "bg-gradient-to-b from-black/25 via-black/10 to-black/30"
+}) {
   return (
     <div className="min-h-screen flex flex-col relative">
       {/* Desktop bg */}
       <div className="hidden md:block fixed inset-0 z-0">
         <img src={desktopBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-black/30" />
+        <div className={`absolute inset-0 ${overlayClass}`} />
       </div>
       {/* Mobile bg */}
       <div className="md:hidden fixed inset-0 z-0">
         <img src={mobileBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-black/30" />
+        <div className={`absolute inset-0 ${overlayClass}`} />
       </div>
 
       <Navbar />
