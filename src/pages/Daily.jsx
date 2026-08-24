@@ -79,6 +79,7 @@ export default function Daily() {
       mobileBg="https://media.base44.com/images/public/user_69a2073c194ba1099feee8ab/49ae208b7_daily-mobile.png"
       title="Today's Marketplace Word"
       subtitle="One day at a time. Work with excellence. Lead with faith."
+      overlayClass="bg-gradient-to-b from-black/45 via-black/35 to-black/50"
     >
       <div className="max-w-4xl mx-auto px-4 pb-16 space-y-6">
         <div className="flex flex-wrap justify-center gap-2">
