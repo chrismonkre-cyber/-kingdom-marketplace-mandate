@@ -84,14 +84,17 @@ export default function Daily() {
       <div className="max-w-4xl mx-auto px-4 pb-16 space-y-6">
         <div className="flex flex-wrap justify-center gap-2">
           {DAYS.map((d, i) => (
-            <button key={i} onClick={() => setSelected(i)}
-              className={`font-cinzel text-xs px-3 py-2 rounded-lg border transition-all ${
-  i === selected
-    ? "bg-yellow-500/90 border-yellow-300 text-black font-bold shadow-md"
-    : "bg-black/60 border-yellow-500/50 text-yellow-100 hover:bg-black/75 hover:border-yellow-400"
-}`}
-              {d.theme.split(" ").slice(0, 2).join(" ")}
-            </button>
+<button
+  key={i}
+  onClick={() => setSelected(i)}
+  className={`font-cinzel text-xs px-3 py-2 rounded-lg border transition-all ${
+    i === selected
+      ? "bg-yellow-500/90 border-yellow-300 text-black font-bold shadow-md"
+      : "bg-black/60 border-yellow-500/50 text-yellow-100 hover:bg-black/75 hover:border-yellow-400"
+  }`}
+>
+  {d.theme.split(" ").slice(0, 2).join(" ")}
+</button>
           ))}
         </div>
 
