@@ -16,6 +16,7 @@ export default function Home() {
       mobileBg="https://media.base44.com/images/public/user_69a2073c194ba1099feee8ab/e177ce04a_home-mobile.png"
       title="Kingdom Marketplace Mandate"
       subtitle="Work with purpose. Lead with wisdom. Occupy for the Kingdom."
+      overlayClass="bg-gradient-to-b from-black/45 via-black/35 to-black/50"
     >
       <div className="max-w-4xl mx-auto px-4 pb-16 space-y-10">
         <GlassCard>
